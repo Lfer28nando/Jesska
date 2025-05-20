@@ -78,3 +78,21 @@
     background-color: #1a1a1a;
     color: white;
   }
+  .jesska-banner-envio{
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.95rem;
+    color: #111;
+    font-weight: 400;
+    border-bottom: 1px solid #ddd;
+}
+.jesska-banner-envio .compra{
+  font-weight: bold;
+  color: #111;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+.jesska-banner-envio .compra:hover{
+  text-decoration: underline;
+}
