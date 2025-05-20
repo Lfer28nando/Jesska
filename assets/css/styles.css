@@ -96,3 +96,39 @@
 .jesska-banner-envio .compra:hover{
   text-decoration: underline;
 }
+.jesska-card-horizontales{
+  height: 800px;
+  background-color: #eee;
+  border-radius: 8px;
+}
+.jesska-card-horizontales img{
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(85%);
+}
+.jesska-overlay-text{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  z-index: 2;
+  text-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+.jesska-card-horizontales .btn {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #1a1a1a;
+    padding: 0.4rem 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.jesska-card-horizontales .btn:hover {
+    background-color: #232323;
+    color: #c1c1c1;
+    border: 1px solid #1a1a1a;
+    transform: scale(1.05);
+}
