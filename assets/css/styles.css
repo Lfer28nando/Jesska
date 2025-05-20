@@ -47,3 +47,34 @@
   .navbar-toggler-jesska:focus {
   box-shadow:none
   }
+
+  .jesska-btn {
+    background-color: #1a1a1a;
+    color: #9a9a9a;
+    border: 1px solid #1a1a1a;
+    padding: 0.7rem 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  .jesska-btn:hover{
+    background-color: transparent;
+    color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+    transform: scale(1.05);
+  }
+    .jesska-btn-sesiones {
+    background-color: transparent;
+    color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+    padding: 0.4rem 0.4rem;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s all;
+  }
+  .jesska-btn-sesiones:hover{
+    background-color: #1a1a1a;
+    color: white;
+  }
