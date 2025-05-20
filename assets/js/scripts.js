@@ -93,4 +93,9 @@ function login(event) {
       });
     });
   });
-  
+
+function moverSlider(direccion) {
+  const slider = document.getElementById("jesskaSlider");
+  const itemWidth = slider.querySelector(".jesska-item").offsetWidth + 16; // ancho + gap
+  slider.scrollLeft += direccion * itemWidth * 5; // mover 5 ítems
+}

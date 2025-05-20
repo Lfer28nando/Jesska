@@ -132,3 +132,68 @@
     border: 1px solid #1a1a1a;
     transform: scale(1.05);
 }
+/* Slider horizontal estilo Jesska */
+.jesska-slider-container {
+  scroll-behavior: smooth;
+  gap: 1rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.jesska-item {
+  flex: 0 0 calc(20% - 1rem); /* 5 items por fila (100% / 5) */
+  max-width: calc(20% - 1rem);
+  background: #000;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  scroll-snap-align: start;
+}
+
+
+.jesska-item img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.jesska-item:hover {
+  transform: scale(1.01);
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #000;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0.6;
+}
+
+.slider-arrow:hover {
+  opacity: 1;
+}
+
+.slider-arrow.left {
+  left: 0;
+}
+
+.slider-arrow.right {
+  right: 0;
+}
+
+/* Para mantener el mismo fondo que los bloques anteriores */
+.bg-light {
+  background-color: #f8f8f8 !important;
+}
+.jesska-slider-background {
+  background-color: #f8f8f8;
+  padding: 2rem 0;
+}

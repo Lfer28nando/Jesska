@@ -50,57 +50,99 @@
    <div class="jesska-banner-envio"> Envio gratis por compras superiores a <strong>$299.000</strong> <br>
   <a href="deporte.html" class="compra"> Compra Ahora </a> </div>
    <!-- banner principal -->
-  <section class="py-4">
-    <div class="container">
+  <section class="py-5 bg-light">
+    <div class="container-fluid px-5">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <h2 class="fw-bold">El equilibrio perfecto entre estilo y funcionalidad</h2>
+          <h2 class="fw-bold"><span>El equilibrio perfecto entre estilo y funcionalidad</span></h2>
           <p class="text-muted">Nuestros tenis están diseñados para acompañarte en cada paso, desde tus entrenamientos más exigentes hasta tus momentos más relajados.</p>
-          <button onclick="window.location.href='deporte.html'" class="btn jesska-btn">Compra Ahora</button>
+          <button id="compraAhoraBtn" class="btn jesska-btn">Compra Ahora</button>
         </div>
-        <div class="col-md-6">
-          <img src="assets/img/l1.png" class="img-fluid" alt="Zapatos Ferk">
-        </div>
-      </div>
-    </div>
-  </section>
-<!-- cartas de tenis -->
-  <section class="container py-5">
-    <div class="row">
-      <div class="col-md-3 mb-4">
-        <div class="product-card">
-          <img src="assets/img/n1.png" class="img-fluid mb-3" alt="tenis1">
-          <h3>NIKE AIRMAX FORCE</h3>
-          <p>PERFECTAS PARA RUNNING</p>
-          <button onclick="window.location.href='deporte.html'" class="btn jesska-btn">Compra Ahora</button>
-        </div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <div class="product-card">
-          <img src="assets/img/n2.png" class="img-fluid mb-3" alt="tenis2">
-          <h3>NIKE RUNNING PRO</h3>
-          <p>ROJAS SUELA BLANCA</p>
-          <button onclick="window.location.href='deporte.html'" class="btn jesska-btn">Compra Ahora</button>
-        </div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <div class="product-card">
-          <img src="assets/img/n3.png" class="img-fluid mb-3" alt="tenis3">
-          <h3>NIKE RUNNING PRO</h3>
-          <p>AZUL SUELA BLANCA</p>
-          <button onclick="window.location.href='deporte.html'" class="btn jesska-btn">Compra Ahora</button>
-        </div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <div class="product-card">
-          <img src="assets/img/n4.png" class="img-fluid mb-3" alt="tenis4">
-          <h3>NIKE AIRMAX FORCE</h3>
-          <p>ROJAS SUELA ROJA</p>
-          <button onclick="window.location.href='deporte.html'" class="<btn jesska-btn">Compra Ahora</button>
+        <div class="col-md-6 d-flex justify-content-center">
+          <img src="assets/img/l1.png" class="img-fluid" alt="Zapatos Ferk" style="max-width: 500px; width: 100%; height: auto;">
         </div>
       </div>
     </div>
   </section>
+
+<!-- seccion slider de productos v2 -->
+<section class="container-fluid px-4 py-5 position-relative bg-light">
+ 
+  <!-- izquierda -->
+  <button class="slider-arrow left" onclick="moverSlider(-1)">&#10094;</button>
+  <div class="jesska-slider-indicators">
+    <span class="active" onclick="moverSlider(0)"></span>
+    <span onclick="moverSlider(1)"></span>
+    <span onclick="moverSlider(2)"></span>
+    <span onclick="moverSlider(3)"></span>
+    <span onclick="moverSlider(4)"></span>
+  <!-- slider -->
+  <div class="jesska-slider-container d-flex overflow-hidden" id="jesskaSlider">
+    <!-- 1 -->
+    <div class="jesska-item text-center">
+      <img src="assets/img/air-force.png" alt="Air Force 1">
+      <p class="mt-2 fw-semibold">Air Force 1</p>
+      <button onclick="window.location.href='deporte.html'" class="btn jesska-btn">Compra Ahora</button>
+    </div>
+    <!-- 2 -->
+    <div class="jesska-item text-center">
+      <img src="assets/img/air-force.png" alt="Air Force 1">
+      <p class="mt-2 fw-semibold">Air Force 1</p>
+      <button onclick="window.location.href='deporte.html'" class="btn jesska-btn">Compra Ahora</button>
+    </div>
+    <!-- 3 -->
+    <div class="jesska-item text-center">
+      <img src="assets/img/air-force.png" alt="Air Force 1">
+      <p class="mt-2 fw-semibold">Air Force 1</p>
+      <button onclick="window.location.href='deporte.html'" class="btn jesska-btn">Compra Ahora</button>
+    </div>
+    <!-- 4 -->
+    <div class="jesska-item text-center">
+      <img src="assets/img/air-force.png" alt="Air Force 1">
+      <p class="mt-2 fw-semibold">Air Force 1</p>
+      <button onclick="window.location.href='deporte.html'" class="btn jesska-btn">Compra Ahora</button>
+    </div>
+    <!-- 5 -->
+    <div class="jesska-item text-center">
+      <img src="assets/img/air-force.png" alt="Air Force 1">
+      <p class="mt-2 fw-semibold">Air Force 1</p>
+      <button onclick="window.location.href='deporte.html'" class="btn jesska-btn">Compra Ahora</button>
+    </div>
+    <!-- 6 -->
+       <div class="jesska-item text-center">
+      <img src="assets/img/air-force.png" alt="Air Force 1">
+      <p class="mt-2 fw-semibold">Air Force 1</p>
+      <button onclick="window.location.href='deporte.html'" class="btn jesska-btn">Compra Ahora</button>
+    </div>
+    <!-- 7 -->
+    <div class="jesska-item text-center">
+      <img src="assets/img/air-force.png" alt="Air Force 1">
+      <p class="mt-2 fw-semibold">Air Force 1</p>
+      <button onclick="window.location.href='deporte.html'" class="btn jesska-btn">Compra Ahora</button>
+    </div>
+    <!-- 8 -->
+    <div class="jesska-item text-center">
+      <img src="assets/img/air-force.png" alt="Air Force 1">
+      <p class="mt-2 fw-semibold">Air Force 1</p>
+      <button onclick="window.location.href='deporte.html'" class="btn jesska-btn">Compra Ahora</button>
+    </div>
+    <!-- 9 -->
+    <div class="jesska-item text-center">
+      <img src="assets/img/air-force.png" alt="Air Force 1">
+      <p class="mt-2 fw-semibold">Air Force 1</p>
+      <button onclick="window.location.href='deporte.html'" class="btn jesska-btn">Compra Ahora</button>
+    </div>
+    <!-- 10 -->
+    <div class="jesska-item text-center">
+      <img src="assets/img/air-force.png" alt="Air Force 1">
+      <p class="mt-2 fw-semibold">Air Force 1</p>
+      <button onclick="window.location.href='deporte.html'" class="btn jesska-btn">Compra Ahora</button>
+    </div>
+  </div>
+
+  <!-- derecha -->
+  <button class="slider-arrow right" onclick="moverSlider(1)">&#10095;</button>
+</section>
 <!-- modal del login -->
   <div class="modal fade" id="loginModal" tabindex="-1">
     <div class="modal-dialog">
@@ -176,7 +218,6 @@
     </div>
   </div>
 </div>
-
  </section>
 <!-- footer -->
 <footer class="bg-dark text-light pt-5 pb-4 border-top border-secondary">
