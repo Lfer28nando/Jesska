@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tienda de Calzado - Ferk</title>
-  <style ></style>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -70,12 +69,7 @@
  
   <!-- izquierda -->
   <button class="slider-arrow left" onclick="moverSlider(-1)">&#10094;</button>
-  <div class="jesska-slider-indicators">
-    <span class="active" onclick="moverSlider(0)"></span>
-    <span onclick="moverSlider(1)"></span>
-    <span onclick="moverSlider(2)"></span>
-    <span onclick="moverSlider(3)"></span>
-    <span onclick="moverSlider(4)"></span>
+  
   <!-- slider -->
   <div class="jesska-slider-container d-flex overflow-hidden" id="jesskaSlider">
     <!-- 1 -->
@@ -167,7 +161,7 @@
   <div class="modal fade" id="registerModal" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
-        <form>
+        <form onsubmit="return register(event)">
           <div class="modal-header">
             <h5 class="modal-title">Crear Cuenta</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
@@ -253,7 +247,7 @@
         <p class="small">Suscríbete para recibir novedades y descuentos</p>
         <form class="mb-3">
           <div class="input-group">
-            <input type="email" class="form-control bg-black border-dark text-light" placeholder="tu@email.com">
+            <input type="email" class="form-control bg-black border-dark text-light" placeholder="tu@correo.com">
             <button class="btn btn-magenta" type="submit">→</button>
           </div>
         </form>
@@ -272,7 +266,7 @@
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-<script src="assets/js/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-9ndCyUa1z3pGp2hKw0r+e0p8U5pIp1K5jL8z2n5LxV0zjH1z7x1i5t9eX+Kz5q5D" crossorigin="anonymous"></script>
+<script src="assets/js/scripts.js" onerror="console.error('Failed to load assets/js/scripts.js. Please check the file path and ensure it exists.');"></script>
 </body>
 </html>
