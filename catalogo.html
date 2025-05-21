@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda de Calzado - Ferk</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<!-- barra de navegacion -->
+ <nav class="navbar navbar-expand-lg navbar-jesska sticky-top">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-jesska" href="index.html">JESSKA</a>
+
+      <button class="navbar-toggler navbar-toggler-jesska" type="button" data-bs-toggle="collapse" data-bs-target="#navbarJesska">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarJesska">
+        <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link nav-link-jesska" href="catalogo.html">Deporte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-jesska" href="catalogo.html">Mujer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-jesska" href="catalogo.html">Niños</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-jesska" href="catalogo.html">Accesorios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-jesska" href="catalogo.html">Hombre</a>
+          </li>
+        </ul>
+        
+        <div class="ms-lg-3">
+          <button class="btn jesska-btn-sesiones" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar Sesion</button>
+          <button class="btn jesska-btn-sesiones" data-bs-toggle="modal" data-bs-target="#registerModal">Crear Cuenta</button>
+          <button class="btn rounded-0 px-4"><img src="assets/img/c1.png" alt="Descripción de la imagen" width="33" height="33"></button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+<body>
+  <!-- banner de desc de envio -->
+   <div class="jesska-banner-envio"> Envio gratis por compras superiores a <strong>$299.000</strong> <br>
+  <a href="catalogo.html" class="compra"> Compra Ahora </a> </div>
+<a href="index.html" class="btn jesska-btn btn-sm mt-4 ms-4">Volver al inicio</a>
+
+
+  <!-- Catálogo -->
+  <section class="container-fluid px-4 py-5 bg-light">
+    <h2 class="fw-bold text-center mb-4">Catálogo</h2>
+    <div class="row g-4" id="catalogoProductos">
+      <!-- Productos -->
+       <!-- 1 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="producto-card bg-white p-3 h-100">
+          <img src="assets/img/g1.png" class="img-fluid mb-3" alt="Tenis 1">
+          <p class="fw-bold mb-1">$799.950</p>
+          <h6 class="mb-1">Tenis Samba 62</h6>
+          <p class="text-muted small mb-1">Originals</p>
+          <p class="text-muted small mb-1">3 colores</p>
+          <p class="text-muted small">Envío gratis</p>
+          <button class="btn jesska-btn w-100 btn-sm mt-2" onclick="window.location.href='producto.html'" >Detalle del Producto</button>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="producto-card bg-white p-3 h-100">
+          <img src="assets/img/g1.png" class="img-fluid mb-3" alt="Tenis 2">
+          <p class="fw-bold mb-1">$599.950</p>
+          <h6 class="mb-1">Tenis Gazelle ADV</h6>
+          <p class="text-muted small mb-1">Originals</p>
+          <p class="text-muted small mb-1">2 colores</p>
+          <p class="text-muted small">Envío gratis</p>
+          <button class="btn jesska-btn w-100 btn-sm mt-2" onclick="window.location.href='producto.html'" >Detalle del Producto</button>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="producto-card bg-white p-3 h-100">
+          <img src="assets/img/g1.png" class="img-fluid mb-3" alt="Guayos F50">
+          <p class="fw-bold mb-1">$1.199.950</p>
+          <h6 class="mb-1">Guayos F50 Elite 2010</h6>
+          <p class="text-muted small mb-1">Fútbol</p>
+          <p class="text-muted small mb-1">1 color</p>
+          <p class="text-muted small">Envío gratis</p>
+          <button class="btn jesska-btn w-100 btn-sm mt-2" onclick="window.location.href='producto.html'" >Detalle del Producto</button>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="producto-card bg-white p-3 h-100">
+          <img src="assets/img/g1.png" class="img-fluid mb-3" alt="Gazelle Indoor">
+          <p class="fw-bold mb-1">$649.950</p>
+          <h6 class="mb-1">Tenis Gazelle Indoor</h6>
+          <p class="text-muted small mb-1">Hombre Originals</p>
+          <p class="text-muted small mb-1">9 colores</p>
+          <p class="text-muted small">Envío gratis</p>
+          <button class="btn jesska-btn w-100 btn-sm mt-2" onclick="window.location.href='producto.html'" >Detalle del Producto</button>
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="producto-card bg-white p-3 h-100">
+          <img src="assets/img/g1.png" class="img-fluid mb-3" alt="Zapato deportivo">
+          <p class="fw-bold mb-1">$559.900</p>
+          <h6 class="mb-1">Nike Ejemplo</h6>
+          <p class="text-muted small mb-1">Deporte</p>
+          <p class="text-muted small mb-1">4 colores</p>
+          <p class="text-muted small">Envío gratis</p>
+          <button class="btn jesska-btn w-100 btn-sm mt-2" onclick="window.location.href='producto.html'" >Detalle del Producto</button>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="producto-card bg-white p-3 h-100">
+          <img src="assets/img/g1.png" class="img-fluid mb-3" alt="Botas casuales">
+          <p class="fw-bold mb-1">$499.900</p>
+          <h6 class="mb-1">Nike Rosa</h6>
+          <p class="text-muted small mb-1">Lifestyle</p>
+          <p class="text-muted small mb-1">2 colores</p>
+          <p class="text-muted small">Envío gratis</p>
+          <button class="btn jesska-btn w-100 btn-sm mt-2" onclick="window.location.href='producto.html'" >Detalle del Producto</button>
+        </div>
+      </div>
+      <!-- 7 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="producto-card bg-white p-3 h-100">
+          <img src="assets/img/g1.png" class="img-fluid mb-3" alt="Zapatos elegantes">
+          <p class="fw-bold mb-1">$679.900</p>
+          <h6 class="mb-1">Nike Azul</h6>
+          <p class="text-muted small mb-1">Training</p>
+          <p class="text-muted small mb-1">5 colores</p>
+          <p class="text-muted small">Envío gratis</p>
+          <button class="btn jesska-btn w-100 btn-sm mt-2" onclick="window.location.href='producto.html'" >Detalle del Producto</button>
+        </div>
+      </div>
+      <!-- 8 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="producto-card bg-white p-3 h-100">
+          <img src="assets/img/g1.png" class="img-fluid mb-3" alt="Zapatos elegantes">
+          <p class="fw-bold mb-1">$679.900</p>
+          <h6 class="mb-1">Nike Azul</h6>
+          <p class="text-muted small mb-1">Training</p>
+          <p class="text-muted small mb-1">5 colores</p>
+          <p class="text-muted small">Envío gratis</p>
+          <button class="btn jesska-btn w-100 btn-sm mt-2" onclick="window.location.href='producto.html'" >Detalle del Producto</button>
+        </div>
+      </div>       
+    </div>
+ 
+  </section>
+   
+
+
+<!-- footer -->
+<footer class="bg-dark text-light pt-5 pb-4 border-top border-secondary">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <h3 class="text-magenta mb-3">Jesska</h3>
+        <p class="mb-4">Distribuidores especializados de calzado.</p>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <h5 class="text-magenta mb-3">Explorar</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-light hover-cyan">Inicio</a></li>
+          <li class="mb-2"><a href="#" class="text-light hover-cyan">Nuevos</a></li>
+          <li class="mb-2"><a href="#" class="text-light hover-cyan">Ofertas</a></li>
+          <li class="mb-2"><a href="#" class="text-light hover-cyan">Colecciones</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h5 class="text-magenta mb-3">Soporte</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-light hover-cyan">Preguntas frecuentes</a></li>
+          <li class="mb-2"><a href="#" class="text-light hover-cyan">Envíos y devoluciones</a></li>
+          <li class="mb-2"><a href="#" class="text-light hover-cyan">Guía de tallas</a></li>
+          <li class="mb-2"><a href="#" class="text-light hover-cyan">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h5 class="text-magenta mb-3">Suscripciòn</h5>
+        <p class="small">Suscríbete para recibir novedades y descuentos</p>
+        <form class="mb-3">
+          <div class="input-group">
+            <input type="email" class="form-control bg-black border-dark text-light" placeholder="tu@correo.com">
+            <button class="btn btn-magenta" type="submit">→</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row pt-3 border-top border-secondary">
+      <div class="col-md-6 text-center text-md-start">
+        <p class="small mb-0">© 2025 Jesska. Todos los derechos reservados.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <a href="#" class="small text-light hover-cyan me-3">Política de privacidad</a>
+        <a href="#" class="small text-light hover-cyan">Términos y condiciones</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-9ndCyUa1z3pGp2hKw0r+e0p8U5pIp1K5jL8z2n5LxV0zjH1z7x1i5t9eX+Kz5q5D" crossorigin="anonymous"></script>
+<script src="assets/js/scripts.js" onerror="console.error('Failed to load assets/js/scripts.js. Please check the file path and ensure it exists.');"></script>
+</body>
+</html>
