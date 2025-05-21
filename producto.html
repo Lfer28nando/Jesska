@@ -38,7 +38,12 @@
         <div class="ms-lg-3">
           <button class="btn jesska-btn-sesiones" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar Sesion</button>
           <button class="btn jesska-btn-sesiones" data-bs-toggle="modal" data-bs-target="#registerModal">Crear Cuenta</button>
-          <button class="btn rounded-0 px-4"><img src="assets/img/c1.png" alt="Descripción de la imagen" width="33" height="33"></button>
+            <a href="carrito.html" class="btn rounded-0 px-4 position-relative">
+            <img src="assets/img/c1.png" alt="carrito" width="33" height="33">
+            <span id="carrito-contador" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+            </a>
+</div>
+
         </div>
 
       </div>
@@ -51,22 +56,33 @@
 <a href="catalogo.html" class="btn jesska-btn btn-sm mt-4 ms-4">Volver al catalogo</a>
 
 <!-- detalle del prod -->
-<!-- Detalle del producto -->
-  <main class="container py-5">
-    <div class="row g-5">
-      <div class="col-md-6">
-        <img src="assets/img/air-force.png" class="img-fluid rounded" alt="Producto">
-      </div>
-      <div class="col-md-6">
-        <h2 class="fw-bold">Air Force One</h2>
-        <p class="text-muted">Referencia clásica de Nike, ideal para estilos urbanos.</p>
-        <h4 class="fw-bold text-danger mb-3">$749.000</h4>
-        <p class="text-muted mb-1">Categoría: Urban</p>
-        <p class="text-muted mb-3">Colores disponibles: Blanco, Negro, Beige</p>
-        <button class="btn jesska-btn px-4 me-2">Agregar al carrito</button>
+<main class="container py-5">
+  <div class="row align-items-center g-5">
+    <!-- im del producto -->
+    <div class="col-md-6">
+      <div class="producto-imagen shadow-sm rounded overflow-hidden">
+        <img src="assets/img/air-force.png" alt="Air Force One" class="img-fluid w-100 h-auto">
       </div>
     </div>
-  </main>
+
+    <!-- info del producto -->
+    <div class="col-md-6">
+      <span class="badge bg-secondary text-uppercase mb-2">Urban</span>
+      <h1 class="fw-bold display-6">Air Force One</h1>
+      <p class="text-muted lead">Referencia clásica de Nike, ideal para estilos urbanos con comodidad y estilo auténtico.</p>
+      <h2 class="text-danger fw-bold mb-4">$749.000</h2>
+
+      <p class="text-muted small mb-1">Colores disponibles:</p>
+      <div class="d-flex gap-2 mb-3">
+        <div class="color-circle bg-white border"></div>
+        <div class="color-circle bg-dark"></div>
+        <div class="color-circle" style="background-color: #ccc;"></div>
+      </div>
+
+      <button class="btn jesska-btn px-4 py-2 mb-3">Agregar al carrito</button><br>
+    </div>
+  </div>
+</main>
 
 <!-- footer -->
 <footer class="bg-dark text-light pt-5 pb-4 border-top border-secondary">
@@ -121,6 +137,7 @@
   </div>
 </footer>
 
+<script src="assets/js/carrito.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-9ndCyUa1z3pGp2hKw0r+e0p8U5pIp1K5jL8z2n5LxV0zjH1z7x1i5t9eX+Kz5q5D" crossorigin="anonymous"></script>
 <script src="assets/js/scripts.js" onerror="console.error('Failed to load assets/js/scripts.js. Please check the file path and ensure it exists.');"></script>
 </body>

@@ -213,3 +213,19 @@
   height: 250px;
   width: 100%;
 }
+
+.producto-imagen img {
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.producto-imagen:hover img {
+  transform: scale(1.03);
+}
+
+.color-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
