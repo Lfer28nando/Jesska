@@ -3,142 +3,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tienda de Calzado - Ferk</title>
+  <title>Detalle del Producto - Jesska</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<!-- barra de navegacion -->
- <nav class="navbar navbar-expand-lg navbar-jesska sticky-top">
+<body>
+  <!-- barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-jesska sticky-top">
     <div class="container">
       <a class="navbar-brand navbar-brand-jesska" href="index.html">JESSKA</a>
-
       <button class="navbar-toggler navbar-toggler-jesska" type="button" data-bs-toggle="collapse" data-bs-target="#navbarJesska">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarJesska">
         <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link nav-link-jesska" href="catalogo.html">Deporte</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-jesska" href="catalogo.html">Mujer</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-jesska" href="catalogo.html">Niños</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-jesska" href="catalogo.html">Accesorios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-jesska" href="catalogo.html">Hombre</a>
-          </li>
+          <li class="nav-item"><a class="nav-link nav-link-jesska" href="catalogo.html">Deporte</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-jesska" href="catalogo.html">Mujer</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-jesska" href="catalogo.html">Niños</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-jesska" href="catalogo.html">Accesorios</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-jesska" href="catalogo.html">Hombre</a></li>
         </ul>
-        
-        <div class="ms-lg-3">
-          <button class="btn jesska-btn-sesiones" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar Sesion</button>
+        <div class="ms-lg-3 d-flex gap-2">
+          <button class="btn jesska-btn-sesiones" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar Sesión</button>
           <button class="btn jesska-btn-sesiones" data-bs-toggle="modal" data-bs-target="#registerModal">Crear Cuenta</button>
-            <a href="carrito.html" class="btn rounded-0 px-4 position-relative">
-            <img src="assets/img/c1.png" alt="carrito" width="33" height="33">
-            <span id="carrito-contador" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
-            </a>
-</div>
-
+          <!-- carrito -->
+          <div class="dropdown">
+            <button class="btn rounded-0 px-4 position-relative" id="carritoToggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/img/c1.png" alt="carrito" width="33" height="33">
+              <span id="carrito-contador" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end p-3" id="carritoDropdown" style="min-width: 300px;">
+              <li><strong>Carrito</strong></li>
+              <li><hr class="dropdown-divider"></li>
+              <li id="carrito-lista"></li>
+              <li class="mt-2 fw-bold" id="carrito-total"></li>
+              <li><button class="btn btn-sm btn-outline-danger w-100 mt-2" onclick="vaciarCarrito()">Vaciar carrito</button></li>
+            </ul>
+          </div>
         </div>
-
       </div>
     </div>
   </nav>
-<body>
-  <!-- banner de desc de envio -->
-   <div class="jesska-banner-envio"> Envio gratis por compras superiores a <strong>$299.000</strong> <br>
-  <a href="catalogo.html" class="compra"> Compra Ahora </a> </div>
-<a href="catalogo.html" class="btn jesska-btn btn-sm mt-4 ms-4">Volver al catalogo</a>
 
-<!-- detalle del prod -->
-<main class="container py-5">
-  <div class="row align-items-center g-5">
-    <!-- im del producto -->
-    <div class="col-md-6">
-      <div class="producto-imagen shadow-sm rounded overflow-hidden">
-        <img src="assets/img/air-force.png" alt="Air Force One" class="img-fluid w-100 h-auto">
-      </div>
-    </div>
-
-    <!-- info del producto -->
-    <div class="col-md-6">
-      <span class="badge bg-secondary text-uppercase mb-2">Urban</span>
-      <h1 class="fw-bold display-6">Air Force One</h1>
-      <p class="text-muted lead">Referencia clásica de Nike, ideal para estilos urbanos con comodidad y estilo auténtico.</p>
-      <h2 class="text-danger fw-bold mb-4">$749.000</h2>
-
-      <p class="text-muted small mb-1">Colores disponibles:</p>
-      <div class="d-flex gap-2 mb-3">
-        <div class="color-circle bg-white border"></div>
-        <div class="color-circle bg-dark"></div>
-        <div class="color-circle" style="background-color: #ccc;"></div>
-      </div>
-      <button class="btn jesska-btn px-4 py-2 mb-3" onclick="agregarAlCarrito('Air Force One', 749000)">Agregar al carrito</button>
-
-    </div>
+  <!-- banner de descuento de envío -->
+  <div class="jesska-banner-envio">
+    Envío gratis por compras superiores a <strong>$299.000</strong> 🚚<br>
+    <a href="catalogo.html" class="compra">Compra Ahora</a>
   </div>
-</main>
 
-<!-- footer -->
-<footer class="bg-dark text-light pt-5 pb-4 border-top border-secondary">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <h3 class="text-magenta mb-3">Jesska</h3>
-        <p class="mb-4">Distribuidores especializados de calzado.</p>
-      </div>
-
-      <div class="col-md-2 mb-4">
-        <h5 class="text-magenta mb-3">Explorar</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="#" class="text-light hover-cyan">Inicio</a></li>
-          <li class="mb-2"><a href="#" class="text-light hover-cyan">Nuevos</a></li>
-          <li class="mb-2"><a href="#" class="text-light hover-cyan">Ofertas</a></li>
-          <li class="mb-2"><a href="#" class="text-light hover-cyan">Colecciones</a></li>
-        </ul>
-      </div>
-
-      <div class="col-md-3 mb-4">
-        <h5 class="text-magenta mb-3">Soporte</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="#" class="text-light hover-cyan">Preguntas frecuentes</a></li>
-          <li class="mb-2"><a href="#" class="text-light hover-cyan">Envíos y devoluciones</a></li>
-          <li class="mb-2"><a href="#" class="text-light hover-cyan">Guía de tallas</a></li>
-          <li class="mb-2"><a href="#" class="text-light hover-cyan">Contacto</a></li>
-        </ul>
-      </div>
-
-      <div class="col-md-3 mb-4">
-        <h5 class="text-magenta mb-3">Suscripciòn</h5>
-        <p class="small">Suscríbete para recibir novedades y descuentos</p>
-        <form class="mb-3">
-          <div class="input-group">
-            <input type="email" class="form-control bg-black border-dark text-light" placeholder="tu@correo.com">
-            <button class="btn btn-magenta" type="submit">→</button>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <div class="row pt-3 border-top border-secondary">
-      <div class="col-md-6 text-center text-md-start">
-        <p class="small mb-0">© 2025 Jesska. Todos los derechos reservados.</p>
-      </div>
-      <div class="col-md-6 text-center text-md-end">
-        <a href="#" class="small text-light hover-cyan me-3">Política de privacidad</a>
-        <a href="#" class="small text-light hover-cyan">Términos y condiciones</a>
-      </div>
-    </div>
+  <!-- botón volver al catálogo -->
+  <div class="text-start px-4 mt-3">
+    <a href="catalogo.html" class="btn jesska-btn btn-sm">← Volver al catálogo</a>
   </div>
-</footer>
 
-<script src="assets/js/carrito.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-9ndCyUa1z3pGp2hKw0r+e0p8U5pIp1K5jL8z2n5LxV0zjH1z7x1i5t9eX+Kz5q5D" crossorigin="anonymous"></script>
-<script src="assets/js/scripts.js" onerror="console.error('Failed to load assets/js/scripts.js. Please check the file path and ensure it exists.');"></script>
+  <!-- detalle del producto -->
+  <main class="container py-5">
+    <div class="row align-items-center g-5">
+      <div class="col-md-6">
+        <div class="producto-imagen shadow-sm rounded overflow-hidden">
+          <img src="assets/img/air-force.png" alt="Air Force One" class="img-fluid w-100 h-auto">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <span class="badge bg-secondary text-uppercase mb-2">Urban</span>
+        <h1 class="fw-bold display-6">Air Force One</h1>
+        <p class="text-muted lead">Referencia clásica de Nike, ideal para estilos urbanos con comodidad y estilo auténtico.</p>
+        <h2 class="text-danger fw-bold mb-4">$749.000</h2>
+        <p class="text-muted small mb-1">Colores disponibles:</p>
+        <div class="d-flex gap-2 mb-3">
+          <div class="color-circle bg-white border"></div>
+          <div class="color-circle bg-dark"></div>
+          <div class="color-circle" style="background-color: #ccc;"></div>
+        </div>
+        <button class="btn jesska-btn px-4 py-2 mb-3" onclick="agregarAlCarrito('Air Force One', 749000)">Agregar al carrito</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="bg-dark text-light pt-5 pb-4 border-top border-secondary">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h3 class="text-magenta mb-3">Jesska</h3>
+          <p class="mb-4">Distribuidores especializados de calzado.</p>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5 class="text-magenta mb-3">Explorar</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-light hover-cyan">Inicio</a></li>
+            <li class="mb-2"><a href="#" class="text-light hover-cyan">Nuevos</a></li>
+            <li class="mb-2"><a href="#" class="text-light hover-cyan">Ofertas</a></li>
+            <li class="mb-2"><a href="#" class="text-light hover-cyan">Colecciones</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="text-magenta mb-3">Soporte</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-light hover-cyan">Preguntas frecuentes</a></li>
+            <li class="mb-2"><a href="#" class="text-light hover-cyan">Envíos y devoluciones</a></li>
+            <li class="mb-2"><a href="#" class="text-light hover-cyan">Guía de tallas</a></li>
+            <li class="mb-2"><a href="#" class="text-light hover-cyan">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="text-magenta mb-3">Suscripción</h5>
+          <p class="small">Suscríbete para recibir novedades y descuentos</p>
+          <form class="mb-3">
+            <div class="input-group">
+              <input type="email" class="form-control bg-black border-dark text-light" placeholder="tu@correo.com">
+              <button class="btn btn-magenta" type="submit">→</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row pt-3 border-top border-secondary">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="small mb-0">© 2025 Jesska. Todos los derechos reservados.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="small text-light hover-cyan me-3">Política de privacidad</a>
+          <a href="#" class="small text-light hover-cyan">Términos y condiciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/carrito.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
 </body>
 </html>
