@@ -53,7 +53,6 @@
     <a href="catalogo.html" class="compra"> Compra Ahora </a>
   </div>
 
-  <!-- CONTENIDO DE LA PÁGINA AQUÍ -->
    <!-- banner principal -->
   <section class="py-5 bg-light">
     <div class="container-fluid px-5">
@@ -218,46 +217,48 @@
  </section>
 
 <!-- modal del login -->
-  <div class="modal fade" id="loginModal" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <form onsubmit="return login(event)">
-          <div class="modal-header">
-            <h5 class="modal-title">Iniciar Sesión</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body">
-            <input type="email" id="loginEmail" class="form-control mb-3" placeholder="Correo electrónico" required>
-            <input type="password" id="loginPassword" class="form-control mb-3" placeholder="Contraseña" required>
-          </div>
-          <div class="modal-footer">
-            <button class="btn btn-primary" type="submit">Entrar</button>
-          </div>
-        </form>
-      </div>
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form onsubmit="return login(event)">
+        <div class="modal-header">
+          <h5 class="modal-title">Iniciar Sesión</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <input type="email" id="loginEmail" class="form-control mb-3" placeholder="Correo electrónico" required>
+          <input type="password" id="loginPassword" class="form-control mb-3" placeholder="Contraseña" required>
+        </div>
+        <div class="modal-footer d-flex justify-content-between align-items-center">
+          <button type="button" class="btn btn-outline-dark btn-sm" data-bs-dismiss="modal">Cancelar</button>
+          <button class="btn jesska-btn px-4" type="submit">Entrar</button>
+        </div>
+      </form>
     </div>
   </div>
+</div>
 <!-- modal del regis -->
-  <div class="modal fade" id="registerModal" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <form onsubmit="return register(event)">
-          <div class="modal-header">
-            <h5 class="modal-title">Crear Cuenta</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body">
-            <input type="text" class="form-control mb-3" placeholder="Nombre completo" required>
-            <input type="email" class="form-control mb-3" placeholder="Correo electrónico" required>
-            <input type="password" class="form-control mb-3" placeholder="Contraseña" required>
-          </div>
-          <div class="modal-footer">
-            <button class="btn btn-success">Registrarse</button>
-          </div>
-        </form>
-      </div>
+<div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form onsubmit="return register(event)">
+        <div class="modal-header">
+          <h5 class="modal-title">Crear Cuenta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="form-control mb-3" placeholder="Nombre completo" required>
+          <input type="email" class="form-control mb-3" placeholder="Correo electrónico" required>
+          <input type="password" class="form-control mb-3" placeholder="Contraseña" required>
+        </div>
+        <div class="modal-footer d-flex justify-content-between align-items-center">
+          <button type="button" class="btn btn-outline-dark btn-sm" data-bs-dismiss="modal">Cancelar</button>
+          <button class="btn jesska-btn px-4" type="submit">Registrarse</button>
+        </div>
+      </form>
     </div>
   </div>
+</div>
 
   <!-- footer -->
   <footer class="bg-dark text-light pt-5 pb-4 border-top border-secondary">
@@ -308,7 +309,7 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
+  <!-- scripts -->
   <script src="assets/js/carrito.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/scripts.js"></script>
