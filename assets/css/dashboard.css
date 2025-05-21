@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f6f7fb;
+}
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar-jesska {
+  width: 240px;
+  background-color: #1a1a2e;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+.sidebar-jesska .logo-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.sidebar-jesska nav a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ccc;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  transition: background 0.3s;
+}
+
+.sidebar-jesska nav a:hover,
+.sidebar-jesska nav a.active {
+  background-color: #2e2e46;
+  color: #fff;
+}
+
+/* Topbar */
+.topbar-jesska {
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Main content */
+.main-panel {
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+.vista-dashboard {
+  display: none;
+}
+.vista-dashboard.active {
+  display: block;
+}
+
+/* Summary Cards */
+.summary-card {
+  padding: 1.25rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
